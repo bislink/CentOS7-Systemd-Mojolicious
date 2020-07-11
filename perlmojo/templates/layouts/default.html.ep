@@ -1,0 +1,201 @@
+% my $host; $host = `hostname -f`;
+%# http:7305, https:7307
+<!doctype html>
+<html lang="en">
+<head>
+<title>c8mint - c8mint.gap.a1z.us</title>
+<meta charset="utf-8">
+<meta name="description" content="c8mint - gap.a1z.us">
+<meta name="keywords" content="Free, software, a1z.us">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="theme-color" content="#B12A34">
+<meta name="Robots" content="INDEX,FOLLOW">
+<meta name="Rating" content="General">
+<link rel="icon" href="/favicon.ico">
+<link rel="apple-touch-icon" href="/favicon.ico">
+<link rel="manifest" href="/manifest.json">
+<link rel="stylesheet" href="<%= url_for 'default.css' %>">
+<link rel="prefetch" href="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js">
+<!--link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"-->
+</head>
+<body>
+	<h1><span class="red">C8mint</span> <small>Gap.A1Z.us/c8gap</small></h1>
+	<nav>
+	<h2 class="inv">Navigation</h2>
+	
+	<ul class="nav nav-pills nav-fill">
+		<li class="nav-item"><a class="nav-link active" href="/" title="A1Z Hosting - Hat.a1z.us">Home</a></li>
+		<li class="nav-item dropdown">
+			<a title="Perl Mojo app on port 7305" class="nav-link dropdown-toggle" data-toggle="dropdown" href="javascript:void(0)" role="button" aria-haspopup="true" aria-expanded="false">
+			Menu
+			</a>
+			<div class="dropdown-menu dropdown-content">
+				<a class="dropdown-item" href="https://perlmojo.get.a1z.us:7702" title="Perl Mojo Home">Home</a>
+				<a class="dropdown-item" href="/shop">Shop</a>
+				<a class="dropdown-item" href="/blog/">Blog</a>
+				<a class="dropdown-item" href="/support">Support</a>
+					<div class="dropdown-divider"></div>
+				<a class="dropdown-item disabled" href="/support">-</a>
+				<a class="dropdown-item" href="/support/" title="Support Home">Support</a> 
+				<a class="dropdown-item" href="/support/contact" title="Contact">Contact</a> 
+					<div class="dropdown-divider"></div>
+				<a class="dropdown-item disabled" href="#">-</a>	
+				<div class="dropdown-divider"></div>
+				<a class="dropdown-item" href="#">#</a>			
+			</div>
+		</li>
+		<li class="nav-item"><a href="#" class="nav-itme" title="hostname"><%= $host %></a></li>
+	</ul>
+</nav>
+	
+	<main>	
+	
+	<section class="sponsor">
+	
+		<header><h2>Sponsors</h2></header>
+		
+		<article class="features">
+		
+			<h3>Hosting Packages</h3>
+			
+			<section class="packages free"><h4>Free Packages</h4>
+			
+				<article class="owndomain first"><h5>Own Domain</h5>
+					<p> With your own domain name, for example, YourName.com.  </p>
+					<p> Get free hosting for your own domain <a href="https://gap.a1z.us/shop/product/a1z-hosting-free/">here</a>  </p>
+				</article>
+				
+				<article class="subdomain"><h5>Sub Domain</h5>
+					<p> As a sub domain of one of our approved sites, for example, YourName.A1Z.us.  </p>
+					<p> Get free hosting for your blog, charity, or business <a href="https://gap.a1z.us/shop/product/a1z-hosting-free/">here</a> with a subdomian 
+					on one of our <a href="approved-sites-for-subdomains.html" title="Approved sites for sub domains">approved sites</a>  </p>
+					
+				</article>
+			<br/>
+			</section>
+			
+			<section class="packages nonfree"><h4>Affordable Packages</h4>
+			
+				<article class="monthly first"><h5>Netizen 01</h5>
+					<p> Own Domain or Sub Domain </p>
+					<p> No Ads, SSH/SFTP Access </p> 
+					<p> Email accessible online and any of your choice emails clients </p>
+					<p> One Script of your choice installed/setup on demand</p>
+					<p> Get free hosting for your blog, charity, or business <a href="https://gap.a1z.us/shop/product/a1z-hosting-netizen-01/">here</a> with your own domain or a subdomian 
+					on/of one of our <a href="approved-sites-for-subdomains.html" title="Approved sites for sub domains">approved sites</a>  </p>
+				</article>
+				
+			</section>
+			
+		</article>
+	
+		<article class="features">
+			<h3>Hosting Features</h3>
+			
+			<div class="wrap">
+			
+			<p> 99.9% uptime, </p>
+			<p> SSH/SFTP Access,  </p>
+			<p> Unlimited Emails,  </p>
+			<p> Unlimited Bandwitdth,  </p>
+			<p> <a href="ads-policy.html" title="Does not apply for free packages/servies but only for paid packages and services">No Ads</a>,  </p>
+			<p> Free monthly backup for all users or accounts or packages, </p>
+			<p> 24/7 Support via online ticket system </p>
+			<p> Unlimited Script Installers like WordPress, Joomla, PiWik, etc. </p>
+			<p> Online File Manager, </p>
+			<p> Free subdomain </p>
+
+			</div>
+		</article>
+		
+		<article class="features">
+		
+			<h3 class="header">Email Features</h3>
+			<div class="wrap">
+			
+			<p> Mail Filter,  </p>
+			<p> SpamAssassin,  </p>
+			<p> Language/Localization,  </p>
+			<p> Change User Details,  </p>
+			<p> Automatic Mail replies,  </p>
+			<p> Plan File,  </p>
+			<p> System Documentation,  </p>
+			<p> Change Password,  </p>
+			<p> Command Shell,  </p>
+			<p> SSH Login,  </p>
+			<p> Scheduled Emails,  </p>
+			<p> Upload and Download </p>
+			<p> Online File Manager  </p>
+
+			</div>
+			
+		</article>
+		
+		<article class="features">
+			<h3 class="header">Featues</h3>
+			<div class="wrap">
+			
+			<p> HTML5 </p>
+			<p> CSS3 </p>
+			<p> JavaScript </p>
+			<p> JQuery</p>
+			<p> Bootstrap </p>
+			<p> Most of our products are compatible with Progressive Web Apps specifications</p>
+
+			</div>
+			
+		</article>
+		
+		<article class="features">
+			<h3 class="header">Commonly used technologies</h3>
+			
+			<div class="wrap">
+			
+			<p> XML </p>
+			<p> YAML </p>
+			<p> JSON </p>
+			<p> Perl </p>
+			<p> MySQL </p>
+			<p> Git Lab </p>
+			<p> Most of our software products work both on Linux (Apache) and Windows (Internet Information Services) platforms </p>
+			
+			</div>
+			
+		</article>
+	
+	</section>
+	
+	<section class="sponsor">
+		<header><h2>Web Design</h2></header>
+	</section>
+	
+	<section class="sponsor">
+		<header><h2>Web Development</h2></header>
+	</section>
+
+	</main>
+
+	<footer class="container-fluid">
+		&copy; <a href="" title="All rights reserved by &quot;A1Z Hosting&quot; - edge.a1z.us">A1Z.us</a> 
+	</footer>
+
+	<script defer src="https://code.jquery.com/jquery-3.4.1.min.js" crossorigin="anonymous"></script>
+	<script defer src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+	<script defer src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" crossorigin="anonymous"></script>
+
+	<script>
+	// register service worker
+	if ('serviceWorker' in navigator) {
+			window.addEventListener('load', () => {
+			navigator.serviceWorker.register('/sw.js')
+			.then((reg) => {
+			console.log('Service worker registered.', reg);
+			});
+		});
+	}
+	</script>
+
+</body>
+
+</html>
+

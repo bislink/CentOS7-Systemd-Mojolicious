@@ -1,0 +1,2 @@
+git push -u gate master
+git push -u gate master --tags
