@@ -21,4 +21,22 @@ IO::Socket::SSL 2.009+ required for TLS support at /usr/local/share/perl5/Mojo/I
 /usr/bin/perl
 [root@c7 app]#
 
-## 
+## 3:53 
+
+Successfully built fa8ed4ecbd0c
+Successfully tagged a2zdotblue/c7-systemd-perl-mojo-02:latest
+Stopping container a2zdocker
+a2zdocker
+Deleting container a2zdocker
+a2zdocker
+43cd171ae5c94276446bdb3049c68d2612170219bd64ed075054465a1bd4e341
+logging in to a2zdocker
+Attempting to create directory /root/perl5
+[root@c7 app]# chmod +x start_apps.sh
+[root@c7 app]# ./start_apps.sh
+[Sat Jul 11 20:50:14 2020] [info] Listening at "http://*:7311"
+Server available at http://127.0.0.1:7311
+[Sat Jul 11 20:50:14 2020] [info] Listening at "https://*:7312?cert=%2Fapp%2Fcerts%2Fssl.cert&key=%2Fapp%2Fcerts%2Fssl.key"
+Server available at https://127.0.0.1:7312
+[root@c7 app]#
+

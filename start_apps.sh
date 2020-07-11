@@ -2,3 +2,5 @@
 
 hypnotoad /app/perlmojo/script/perlmojo
 
+systemctl start mariadb
+

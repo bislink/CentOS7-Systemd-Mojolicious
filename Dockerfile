@@ -15,7 +15,7 @@ RUN rm -rf /app/perlmojo; rm -rf /app/Dockerfile
 
 COPY . /app
 
-RUN rm -rf /app/Dockerfile; rm -rf /app/docker-run.sh; rm -rf /app/README.md 
+RUN rm -rf /app/Dockerfile; rm -rf /app/docker-run.sh; rm -rf /app/README.md; chmod +x /app/start_apps.sh; 
 
 # expose ports 
 EXPOSE 80 443 22 3306 7310 7311 7312 7313 7314 7315 7316 7317 7318
