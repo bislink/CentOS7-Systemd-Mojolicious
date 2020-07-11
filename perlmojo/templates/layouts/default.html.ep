@@ -1,50 +1,52 @@
 % my $host; $host = `hostname -f`;
-%# http:7305, https:7307
+
 <!doctype html>
 <html lang="en">
 <head>
-<title>c8mint - c8mint.gap.a1z.us</title>
+<title>A1Z Hosting - A1Z.us - c7.gap.a1z.us</title>
 <meta charset="utf-8">
-<meta name="description" content="c8mint - gap.a1z.us">
-<meta name="keywords" content="Free, software, a1z.us">
+<meta name="description" content="Centos 7 docker container with systemd, MySQL 5, Perl, Mojolicious appc7.gap.a1z.us">
+<meta name="keywords" content="Free, software, docker image, centos 7, perl, MySQL 5, Perl, Mojolicious, a1z.us">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="theme-color" content="#B12A34">
 <meta name="Robots" content="INDEX,FOLLOW">
 <meta name="Rating" content="General">
-<link rel="icon" href="/favicon.ico">
-<link rel="apple-touch-icon" href="/favicon.ico">
-<link rel="manifest" href="/manifest.json">
+<link rel="icon" href="<%= url_for 'favicon.ico %>">
+<link rel="apple-touch-icon" href="<%= url_for 'favicon.ico %>">
+<link rel="manifest" href="<%= url_for 'manifest.json %>">
 <link rel="stylesheet" href="<%= url_for 'default.css' %>">
 <link rel="prefetch" href="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js">
+
 <!--link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"-->
+
 </head>
 <body>
-	<h1><span class="red">C8mint</span> <small>Gap.A1Z.us/c8gap</small></h1>
+	<h1><span class="red">A1Z Hosting</span> <small>www.A1Z.us</small></h1>
 	<nav>
 	<h2 class="inv">Navigation</h2>
 	
 	<ul class="nav nav-pills nav-fill">
-		<li class="nav-item"><a class="nav-link active" href="/" title="A1Z Hosting - Hat.a1z.us">Home</a></li>
+		<li class="nav-item"><a class="nav-link active" href="/" title="A1Z Hosting - www.a1z.us">Home</a></li>
+		<li class="nav-item"><a href="#" class="nav-itme" title="hostname"><%= $host %></a></li>
 		<li class="nav-item dropdown">
 			<a title="Perl Mojo app on port 7305" class="nav-link dropdown-toggle" data-toggle="dropdown" href="javascript:void(0)" role="button" aria-haspopup="true" aria-expanded="false">
-			Menu
+			More
 			</a>
 			<div class="dropdown-menu dropdown-content">
-				<a class="dropdown-item" href="https://perlmojo.get.a1z.us:7702" title="Perl Mojo Home">Home</a>
+				<a class="dropdown-item" href="https://www.a1z.us" title="A1Z Hosting - Home">Home</a>
 				<a class="dropdown-item" href="/shop">Shop</a>
 				<a class="dropdown-item" href="/blog/">Blog</a>
 				<a class="dropdown-item" href="/support">Support</a>
 					<div class="dropdown-divider"></div>
 				<a class="dropdown-item disabled" href="/support">-</a>
-				<a class="dropdown-item" href="/support/" title="Support Home">Support</a> 
-				<a class="dropdown-item" href="/support/contact" title="Contact">Contact</a> 
+				<a class="dropdown-item" href="/support/" title="Support">Support</a> 
+				<a class="dropdown-item" href="/contact" title="Contact">Contact</a> 
 					<div class="dropdown-divider"></div>
 				<a class="dropdown-item disabled" href="#">-</a>	
 				<div class="dropdown-divider"></div>
 				<a class="dropdown-item" href="#">#</a>			
 			</div>
 		</li>
-		<li class="nav-item"><a href="#" class="nav-itme" title="hostname"><%= $host %></a></li>
 	</ul>
 </nav>
 	
@@ -62,12 +64,12 @@
 			
 				<article class="owndomain first"><h5>Own Domain</h5>
 					<p> With your own domain name, for example, YourName.com.  </p>
-					<p> Get free hosting for your own domain <a href="https://gap.a1z.us/shop/product/a1z-hosting-free/">here</a>  </p>
+					<p> Get free hosting for your own domain <a href="https://www.a1z.us/blog/shop/product/a1z-hosting-free/">here</a>  </p>
 				</article>
 				
 				<article class="subdomain"><h5>Sub Domain</h5>
 					<p> As a sub domain of one of our approved sites, for example, YourName.A1Z.us.  </p>
-					<p> Get free hosting for your blog, charity, or business <a href="https://gap.a1z.us/shop/product/a1z-hosting-free/">here</a> with a subdomian 
+					<p> Get free hosting for your blog, charity, or business <a href="https://www.a1z.us/blog/shop/product/a1z-hosting-free/">here</a> with a subdomian 
 					on one of our <a href="approved-sites-for-subdomains.html" title="Approved sites for sub domains">approved sites</a>  </p>
 					
 				</article>
@@ -81,7 +83,7 @@
 					<p> No Ads, SSH/SFTP Access </p> 
 					<p> Email accessible online and any of your choice emails clients </p>
 					<p> One Script of your choice installed/setup on demand</p>
-					<p> Get free hosting for your blog, charity, or business <a href="https://gap.a1z.us/shop/product/a1z-hosting-netizen-01/">here</a> with your own domain or a subdomian 
+					<p> Get free hosting for your blog, charity, or business <a href="https://www.a1z.us/blog/shop/product/a1z-hosting-netizen-01/">here</a> with your own domain or a subdomian 
 					on/of one of our <a href="approved-sites-for-subdomains.html" title="Approved sites for sub domains">approved sites</a>  </p>
 				</article>
 				
@@ -176,7 +178,7 @@
 	</main>
 
 	<footer class="container-fluid">
-		&copy; <a href="" title="All rights reserved by &quot;A1Z Hosting&quot; - edge.a1z.us">A1Z.us</a> 
+		&copy; <a href="https://www.a1z.us" title="All rights reserved by &quot; A1Z Hosting&quot; - www.a1z.us">A1Z.us</a> 
 	</footer>
 
 	<script defer src="https://code.jquery.com/jquery-3.4.1.min.js" crossorigin="anonymous"></script>

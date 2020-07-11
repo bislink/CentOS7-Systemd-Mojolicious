@@ -43,3 +43,24 @@ Server available at https://127.0.0.1:7312
 Could not access https://gap.a1z.us:7312/ probably due to certs not there ... 
 
 Added certs
+
+4:47
+
+Successfully built 76906f544a3a
+Successfully tagged a2zdotblue/c7-systemd-perl-mojo-02:latest
+Stopping container a2zdocker
+a2zdocker
+Deleting container a2zdocker
+a2zdocker
+85e80f2a138a18dfa6ee144dca597d885fea2ae588fa82a9cb68520317fbaeb3
+logging in to a2zdocker
+Attempting to create directory /root/perl5
+[root@c7 app]# ./start_apps.sh
+[Sat Jul 11 21:45:42 2020] [info] Listening at "http://*:80"
+Server available at http://127.0.0.1:80
+[Sat Jul 11 21:45:42 2020] [info] Listening at "https://*:443?cert=%2Fapp%2Fcerts%2Fcert1.pem&key=%2Fapp%2Fcerts%2Fprivkey1.pem"
+Server available at https://127.0.0.1:443
+[root@c7 app]#
+
+https://gap.a1z.us:7312/ OK but wrong certs ( expired )
+
