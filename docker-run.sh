@@ -3,6 +3,8 @@
 # name to be given to container 
 name="a2zdocker";
 
+image="a2zdotblue/c7-systemd-perl-mojo-02";
+
 # rebuid image to install updates
 echo "Building $image";
 docker build -t $image . 
@@ -39,8 +41,8 @@ echo "Deleting container $name"
 #sudo docker container rm $name
 
 # run built image
-echo "docker run -d -v /sys/fs/cgroup:/sys/fs/cgroup:ro --hostname c7.gap.a1z.us --privileged --name $name -p $h_http:$g_http -p $h_https:$g_https -p $h_mysql:$g_mysql -p $h_ssh:$g_ssh -p $h_app_ssl:$g_app_ssl -p $h_perlmojo:$g_perlmojo $image"
-sudo docker run -d -v /sys/fs/cgroup:/sys/fs/cgroup:ro ==hostname c7.gap.a1z.us --privileged --name "$name" -p $h_http:$g_http \
+#echo "docker run -d -v /sys/fs/cgroup:/sys/fs/cgroup:ro --hostname c7.gap.a1z.us --privileged --name $name -p $h_http:$g_http -p $h_https:$g_https -p $h_mysql:$g_mysql -p $h_ssh:$g_ssh -p $h_app_ssl:$g_app_ssl -p $h_perlmojo:$g_perlmojo $image"
+sudo docker run -d -v /sys/fs/cgroup:/sys/fs/cgroup:ro --hostname c7.gap.a1z.us --privileged --name "$name" -p $h_http:$g_http \
 -p $h_https:$g_https -p $h_mysql:$g_mysql -p $h_ssh:$g_ssh -p $h_app_ssl:$g_app_ssl \
 -p $h_perlmojo:$g_perlmojo -p $h_apache:$g_apache -p $h_mojo_ssl:$g_mojo_ssl \
 -p $h_apache_ssl:$g_apache_ssl "$image"
