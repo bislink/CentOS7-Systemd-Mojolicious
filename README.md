@@ -1,4 +1,6 @@
-2020 07 11 3:21 pm 
+# Project updates/details##
+
+## 2020 07 11 3:21 pm 
 
 Successfully built 0b55d8bd81d4
 Successfully tagged a2zdotblue/c7-systemd-perl-mojo-02:latest
@@ -19,3 +21,4 @@ IO::Socket::SSL 2.009+ required for TLS support at /usr/local/share/perl5/Mojo/I
 /usr/bin/perl
 [root@c7 app]#
 
+## 
