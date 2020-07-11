@@ -5,16 +5,13 @@ FROM a2zdotblue/c7-systemd-perl-mojo-02
 
 LABEL "url"="c7.gap.a1z.us"
 
-RUN yum -y update
-
-RUN yum -y install nano wget vim mariadb-server perl-CPAN perl-DateTime
+RUN yum -y update; yum -y install nano wget vim mariadb-server perl-CPAN perl-DateTime
 
 WORKDIR /app
 
-RUN rm -rf /app/perlmojo; rm -rt /app/Dockerfile 
+RUN rm -rf /app/perlmojo; rm -rf /app/Dockerfile 
 
 COPY . /app
-COPY ./start_apps.sh /app/start_apps.sh
 
 RUN rm -rf /app/Dockerfile; rm -rf /app/docker-run.sh
 
