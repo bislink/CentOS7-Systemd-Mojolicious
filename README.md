@@ -40,3 +40,6 @@ Server available at http://127.0.0.1:7311
 Server available at https://127.0.0.1:7312
 [root@c7 app]#
 
+Could not access https://gap.a1z.us:7312/ probably due to certs not there ... 
+
+Added certs
