@@ -34,11 +34,11 @@ g_apache_ssl='7318'
 
 # stop container
 echo "Stopping container $name"
-#sudo docker container stop $name
+sudo docker container stop $name
 
 # delete container 
 echo "Deleting container $name"
-#sudo docker container rm $name
+sudo docker container rm $name
 
 # run built image
 #echo "docker run -d -v /sys/fs/cgroup:/sys/fs/cgroup:ro --hostname c7.gap.a1z.us --privileged --name $name -p $h_http:$g_http -p $h_https:$g_https -p $h_mysql:$g_mysql -p $h_ssh:$g_ssh -p $h_app_ssl:$g_app_ssl -p $h_perlmojo:$g_perlmojo $image"
