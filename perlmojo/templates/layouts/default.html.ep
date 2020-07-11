@@ -1,9 +1,9 @@
-% my $host; $host = `hostname -f`;
+% my $host = ''; $host = `hostname -f`;
 
 <!doctype html>
 <html lang="en">
 <head>
-<title>A1Z Hosting - A1Z.us - c7.gap.a1z.us</title>
+<title>A1Z Hosting, A1Z.us - CentOS7 docker image with systemd and ready to go Perl Mojolicious App - c7.gap.a1z.us</title>
 <meta charset="utf-8">
 <meta name="description" content="Centos 7 docker container with systemd, MySQL 5, Perl, Mojolicious appc7.gap.a1z.us">
 <meta name="keywords" content="Free, software, docker image, centos 7, perl, MySQL 5, Perl, Mojolicious, a1z.us">
@@ -11,9 +11,9 @@
 <meta name="theme-color" content="#B12A34">
 <meta name="Robots" content="INDEX,FOLLOW">
 <meta name="Rating" content="General">
-<link rel="icon" href="<%= url_for 'favicon.ico %>">
-<link rel="apple-touch-icon" href="<%= url_for 'favicon.ico %>">
-<link rel="manifest" href="<%= url_for 'manifest.json %>">
+<link rel="icon" href="<%= url_for 'favicon.ico' %>">
+<link rel="apple-touch-icon" href="<%= url_for 'favicon.ico' %>">
+<link rel="manifest" href="<%= url_for 'manifest.json' %>">
 <link rel="stylesheet" href="<%= url_for 'default.css' %>">
 <link rel="prefetch" href="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js">
 

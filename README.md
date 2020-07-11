@@ -64,3 +64,9 @@ Server available at https://127.0.0.1:443
 
 https://gap.a1z.us:7312/ OK but wrong certs ( expired )
 
+5:24
+
+https OK.
+Mojolicious App home page improved - ok
+
+
