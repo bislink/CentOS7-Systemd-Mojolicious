@@ -30,6 +30,8 @@ COPY ./perlmojo/public/default.css /var/www/html/default.css
 COPY ./perlmojo/public/images /var/www/html/images
 COPY ./certs /app/certs
 
+RUN chmod +x /app/perlmojo/script/perlmojo
+
 # expose ports 
 EXPOSE 80 443 22 3306 7310 7311 7312 7313 7314 7315 7316 7317 7318
 

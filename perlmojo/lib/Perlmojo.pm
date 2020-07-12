@@ -17,9 +17,9 @@ sub startup {
   # Normal route to controller
   $r->get('/')->to('example#welcome');
   
-  $r->get('/')->to('example#support');
+  $r->get('/support')->to('example#support');
   
-  $r->get('/')->to('example#contact');
+  $r->get('/contact')->to('example#contact');
   
 }
 
