@@ -6,7 +6,22 @@ sub welcome {
   my $self = shift;
 
   # Render template "example/welcome.html.ep" with message
-  $self->render(msg => 'Welcome to the Mojolicious real-time web framework!');
+  $self->render(msg => 'Home - C7.GAP.A1Z.US');
 }
+
+sub support {
+  my $self = shift;
+
+  # Render template "example/welcome.html.ep" with message
+  $self->render(msg => 'Support - C7.GAP.A1Z.US');
+}
+
+sub contact {
+  my $self = shift;
+
+  # Render template "example/welcome.html.ep" with message
+  $self->render(msg => 'Contact - C7.GAP.A1Z.US');
+}
+
 
 1;

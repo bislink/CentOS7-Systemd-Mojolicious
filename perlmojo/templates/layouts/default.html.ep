@@ -52,6 +52,8 @@
 	
 	<main>	
 	
+	<%== content %>
+	
 	<section class="sponsor">
 	
 		<header><h2>Sponsors</h2></header>

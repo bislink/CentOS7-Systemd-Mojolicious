@@ -13,12 +13,11 @@ WORKDIR /app
 
 RUN rm -rf /app/perlmojo; rm -rf /app/Dockerfile 
 
-COPY ./perlmojo /app
+COPY ./perlmojo /app/perlmojo
+RUN rm -rf /app/perlmojo/.git
 COPY ./start_apps.sh /app/start_apps.sh
 
-RUN chmod +x /app/start_apps.sh; 
-
-RUN yum -y install httpd bind postfix cyrus-imapd* mod_ssl; rm -rf /etc/httpd/conf/httpd.conf; rm -rf /etc/httpd/conf.d/ssl.conf; 
+RUN yum -y install httpd bind postfix cyrus-imapd* mod_ssl; rm -rf /etc/httpd/conf/httpd.conf; rm -rf /etc/httpd/conf.d/ssl.conf; chmod +x /app/start_apps.sh; 
 
 COPY ./apache/httpd.conf /etc/httpd/conf/httpd.conf 
 COPY ./apache/ssl.conf /etc/httpd/conf.d/ssl.conf

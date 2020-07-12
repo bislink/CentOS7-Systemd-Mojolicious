@@ -109,3 +109,25 @@ but recursion is disabled -- not retrieving.
 
 [root@c7 app]#
 
+7:41 PM
+
+Successfully built 2c6dd8a6f1aa
+Successfully tagged a2zdotblue/c7-systemd-perl-mojo-02:latest
+Stopping container a2zdocker
+a2zdocker
+Deleting container a2zdocker
+a2zdocker
+479f2558b21bb6e5e654cc0ab69c9f7bd22bfa951caa8c478af739392e7d64cb
+logging in to a2zdocker
+Attempting to create directory /root/perl5
+[root@c7 app]# ./s
+script/        start_apps.sh
+[root@c7 app]# ./start_apps.sh
+Cannot find current script '/app/perlmojo/script/perlmojo' at /usr/share/perl5/FindBin.pm line 166.
+BEGIN failed--compilation aborted at /usr/share/perl5/FindBin.pm line 166.
+Compilation failed in require at /usr/local/share/perl5/Mojo/Server.pm line 47.
+Created symlink from /etc/systemd/system/multi-user.target.wants/httpd.service to /usr/lib/systemd/system/httpd.service.
+[root@c7 app]#
+
+
+
