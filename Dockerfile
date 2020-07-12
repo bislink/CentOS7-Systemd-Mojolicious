@@ -11,7 +11,7 @@ RUN yum -y install perl-*; cpanm CPAN Cpanel::JSON::XS EV IO::Socket::Socks IO::
 
 WORKDIR /app
 
-RUN rm -rf /app/perlmojo; rm -rf /app/Dockerfile 
+RUN rm -rf /app
 
 COPY ./perlmojo /app/perlmojo
 RUN rm -rf /app/perlmojo/.git
@@ -26,6 +26,8 @@ COPY ./apache/index.html /var/www/html/index.html
 COPY ./apache/sw.js /var/www/html/sw.js
 COPY ./apache/manifest.json /var/www/html/manifest.json
 COPY ./apache/offline.html /var/www/html/offline.html
+COPY ./perlmojo/public/default.css /var/www/html/default.css
+cOPY ./perlmojo/public/images /var/www/html/images
 
 # expose ports 
 EXPOSE 80 443 22 3306 7310 7311 7312 7313 7314 7315 7316 7317 7318

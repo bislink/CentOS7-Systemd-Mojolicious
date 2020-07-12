@@ -118,7 +118,7 @@ a2zdocker
 Deleting container a2zdocker
 a2zdocker
 479f2558b21bb6e5e654cc0ab69c9f7bd22bfa951caa8c478af739392e7d64cb
-logging in to a2zdocker
+logging in to a2zdocker./
 Attempting to create directory /root/perl5
 [root@c7 app]# ./s
 script/        start_apps.sh
@@ -128,6 +128,50 @@ BEGIN failed--compilation aborted at /usr/share/perl5/FindBin.pm line 166.
 Compilation failed in require at /usr/local/share/perl5/Mojo/Server.pm line 47.
 Created symlink from /etc/systemd/system/multi-user.target.wants/httpd.service to /usr/lib/systemd/system/httpd.service.
 [root@c7 app]#
+
+9:36 PM
+
+Successfully built 7b1447a1cdc8
+Successfully tagged a2zdotblue/c7-systemd-perl-mojo-02:latest
+Stopping container a2zdocker
+a2zdocker
+Deleting container a2zdocker
+a2zdocker
+665836361abad6860a6b5c878d06ed3211733d9383e8fe047a4224ec95b5d8e3
+logging in to a2zdocker
+Attempting to create directory /root/perl5
+
+[root@c7 app]# ./start_apps.sh
+[Sun Jul 12 02:36:50 2020] [info] Listening at "http://*:80"
+Server available at http://127.0.0.1:80
+[Sun Jul 12 02:36:50 2020] [info] Listening at "https://*:443?cert=%2Fapp%2Fcerts%2Fcert2.pem&key=%2Fapp%2Fcerts%2Fprivkey2.pem"
+Server available at https://127.0.0.1:443
+Spider mode enabled. Check if remote file exists.
+--2020-07-12 02:36:56--  https://gap.a1z.us:7312/
+Resolving gap.a1z.us (gap.a1z.us)... 34.66.69.185
+Connecting to gap.a1z.us (gap.a1z.us)|34.66.69.185|:7312... connected.
+WARNING: cannot verify gap.a1z.us's certificate, issued by ‘/C=US/O=Let's Encrypt/CN=Let's Encrypt Authority X3’:
+  Unable to locally verify the issuer's authority.
+HTTP request sent, awaiting response... 200 OK
+Length: 7112 (6.9K) [text/html]
+Remote file exists and could contain further links,
+but recursion is disabled -- not retrieving.
+
+Spider mode enabled. Check if remote file exists.
+--2020-07-12 02:36:56--  https://gap.a1z.us:7318/
+Resolving gap.a1z.us (gap.a1z.us)... 34.66.69.185
+Connecting to gap.a1z.us (gap.a1z.us)|34.66.69.185|:7318... connected.
+WARNING: cannot verify gap.a1z.us's certificate, issued by ‘/C=US/O=Let's Encrypt/CN=Let's Encrypt Authority X3’:
+  Unable to locally verify the issuer's authority.
+HTTP request sent, awaiting response... 200 OK
+Length: 7055 (6.9K) [text/html]
+Remote file exists and could contain further links,
+but recursion is disabled -- not retrieving.
+
+[root@c7 app]# ls
+certs  lib  perlmojo  perlmojo.conf  public  r  script  start_apps.sh  t  templates
+[root@c7 app]#
+
 
 
 

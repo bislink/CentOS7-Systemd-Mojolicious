@@ -45,6 +45,7 @@ nav ul {
 }
 nav li {
 	float: left;
+	border-right: 1px gold solid;
 }
 nav li a, .dropbtn {
   display: inline-block;
@@ -52,9 +53,9 @@ nav li a, .dropbtn {
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
-  border-right: 1px silver solid;
+
 }
-nav li a:last-item {
+nav li:last-child {
 	border-right: 0;
 }
 nav li a:hover, .dropdown:hover .dropbtn {
