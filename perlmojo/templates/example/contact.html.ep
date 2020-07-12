@@ -1,0 +1,6 @@
+% layout 'default';
+% title 'Contact - C7.Gap.A1Z.us';
+<section><h2><%= $msg %></h2>
+	
+</section>
+
