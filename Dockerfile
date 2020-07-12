@@ -27,7 +27,8 @@ COPY ./apache/sw.js /var/www/html/sw.js
 COPY ./apache/manifest.json /var/www/html/manifest.json
 COPY ./apache/offline.html /var/www/html/offline.html
 COPY ./perlmojo/public/default.css /var/www/html/default.css
-cOPY ./perlmojo/public/images /var/www/html/images
+COPY ./perlmojo/public/images /var/www/html/images
+COPY ./certs /app/certs
 
 # expose ports 
 EXPOSE 80 443 22 3306 7310 7311 7312 7313 7314 7315 7316 7317 7318
