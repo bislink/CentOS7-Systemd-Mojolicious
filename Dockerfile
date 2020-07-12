@@ -13,9 +13,20 @@ WORKDIR /app
 
 RUN rm -rf /app/perlmojo; rm -rf /app/Dockerfile 
 
-COPY . /app
+COPY ./perlmojo /app
+COPY ./start_apps.sh /app/start_apps.sh
 
-RUN rm -rf /app/Dockerfile; rm -rf /app/docker-run.sh; rm -rf /app/*.md; chmod +x /app/start_apps.sh; 
+RUN chmod +x /app/start_apps.sh; 
+
+RUN yum -y install httpd bind postfix cyrus-imapd* mod_ssl; rm -rf /etc/httpd/conf/httpd.conf; rm -rf /etc/httpd/conf.d/ssl.conf; 
+
+COPY ./apache/httpd.conf /etc/httpd/conf/httpd.conf 
+COPY ./apache/ssl.conf /etc/httpd/conf.d/ssl.conf
+
+COPY ./apache/index.html /var/www/html/index.html
+COPY ./apache/sw.js /var/www/html/sw.js
+COPY ./apache/manifest.json /var/www/html/manifest.json
+COPY ./apache/offline.html /var/www/html/offline.html
 
 # expose ports 
 EXPOSE 80 443 22 3306 7310 7311 7312 7313 7314 7315 7316 7317 7318

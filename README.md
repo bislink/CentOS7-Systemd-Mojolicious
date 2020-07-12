@@ -69,4 +69,43 @@ https://gap.a1z.us:7312/ OK but wrong certs ( expired )
 https OK.
 Mojolicious App home page improved - ok
 
+5:52
+
+Successfully built c8b3ebbb5a21
+Successfully tagged a2zdotblue/c7-systemd-perl-mojo-02:latest
+Stopping container a2zdocker
+a2zdocker
+Deleting container a2zdocker
+a2zdocker
+f46f07f71f9132c8997a8a041ce341f055af65d41b25c7813322010b58f3ae1b
+logging in to a2zdocker
+Attempting to create directory /root/perl5
+[root@c7 app]# ./start_apps.sh
+[Sat Jul 11 22:51:15 2020] [info] Listening at "http://*:80"
+Server available at http://127.0.0.1:80
+[Sat Jul 11 22:51:15 2020] [info] Listening at "https://*:443?cert=%2Fapp%2Fcerts%2Fcert2.pem&key=%2Fapp%2Fcerts%2Fprivkey2.pem"
+Server available at https://127.0.0.1:443
+[root@c7 app]#
+[root@c7 app]# wget --spider --tries 1 https://gap.a1z.us:7312
+Spider mode enabled. Check if remote file exists.
+--2020-07-11 22:51:45--  https://gap.a1z.us:7312/
+Resolving gap.a1z.us (gap.a1z.us)... 34.66.69.185
+Connecting to gap.a1z.us (gap.a1z.us)|34.66.69.185|:7312... connected.
+ERROR: cannot verify gap.a1z.us's certificate, issued by ‘/C=US/O=Let's Encrypt/CN=Let's Encrypt Authority X3’:
+  Unable to locally verify the issuer's authority.
+To connect to gap.a1z.us insecurely, use `--no-check-certificate'.
+
+[root@c7 app]# wget --no-check-certificate --spider --tries 1 https://gap.a1z.us:7312
+Spider mode enabled. Check if remote file exists.
+--2020-07-11 22:51:57--  https://gap.a1z.us:7312/
+Resolving gap.a1z.us (gap.a1z.us)... 34.66.69.185
+Connecting to gap.a1z.us (gap.a1z.us)|34.66.69.185|:7312... connected.
+WARNING: cannot verify gap.a1z.us's certificate, issued by ‘/C=US/O=Let's Encrypt/CN=Let's Encrypt Authority X3’:
+  Unable to locally verify the issuer's authority.
+HTTP request sent, awaiting response... 200 OK
+Length: 7056 (6.9K) [text/html]
+Remote file exists and could contain further links,
+but recursion is disabled -- not retrieving.
+
+[root@c7 app]#
 
