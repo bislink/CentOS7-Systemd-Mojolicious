@@ -27,9 +27,9 @@
 	
 	<ul class="nav nav-pills nav-fill">
 		<li class="nav-item"><a class="nav-link active" href="https://www.a1z.us" title="A1Z Hosting - www.a1z.us">Home</a></li>
-		<li class="nav-item"><a href="#" class="nav-itme" title="C7 Home, hostname"><%= $host %></a></li>
-		<li class="nav-item"><a href="/contact" class="nav-itme" title="Contact">Contact</a></li>
-		<li class="nav-item"><a href="support" class="nav-itme" title="Support">Support</a></li>
+		<li class="nav-item"><a href="#" class="nav-item" title="C7 Home, hostname"><%= $host %></a></li>
+		<li class="nav-item"><a href="/contact" class="nav-item" title="Contact">Contact</a></li>
+		<li class="nav-item"><a href="support" class="nav-item" title="Support">Support</a></li>
 		<li class="nav-item dropdown">
 			<a title="A Perl/Mojolicious app" class="nav-link dropdown-toggle" data-toggle="dropdown" href="javascript:void(0)" role="button" aria-haspopup="true" aria-expanded="false">
 			More
@@ -37,13 +37,13 @@
 			<div class="dropdown-menu dropdown-content">
 				<a class="dropdown-item" href="https://www.a1z.us" title="A1Z Hosting - Home">Home</a>
 				<a class="dropdown-item" href="/support">Support</a>
-					<div class="dropdown-divider"></div>
-				<a class="dropdown-item disabled" href="#">-</a>
 				<a class="dropdown-item" href="/contact" title="Contact">Contact</a> 
 					<div class="dropdown-divider"></div>
+				<a class="dropdown-item disabled" href="#">-</a>
+				<li class="nav-item"><a href="https://gap.a1z.us:7318" class="nav-item" title="Apache Server">Apache Server</a></li>
+					<div class="dropdown-divider"></div>
 				<a class="dropdown-item disabled" href="#">-</a>	
-				<div class="dropdown-divider"></div>
-				<a class="dropdown-item" href="#">#</a>			
+				<div class="dropdown-divider"></div>		
 			</div>
 		</li>
 	</ul>

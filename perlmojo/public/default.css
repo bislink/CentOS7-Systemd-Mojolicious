@@ -133,7 +133,7 @@ textarea { width:100%; min-height:9rem; }
 .sponsor {
 	margin:2rem;
 	padding:0rem;
-	border: 0px solid gray;
+	border: 1px solid gray;
 	clear:both;
 	height:auto;
 	width:auto;
@@ -148,13 +148,15 @@ textarea { width:100%; min-height:9rem; }
 	width:auto;
 }
 .sponsor article h3 {
+	/* hosting packages */
 	margin:0;
-	padding:0.3rem;
+	padding:0.5rem;
 	color:white;
 	text-align:left;
 	font-size:0.8rem;
 	background-image: radial-gradient( circle at top right, blue, red );
 	clear:both;
+	width: auto;
 }
 .sponsor article section {
 	padding:2rem;
